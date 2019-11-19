@@ -1,11 +1,12 @@
 <html>
-    <head>
-        <title>Nitiphelm.com</title>
-        <meta name="viewport" content="width-device-width" ,initial-scale= 1.0">
-    <style>
-    body{
+        <head>
+            <title>Nitiphelm.com</title>
+            <meta name="viewport" content="width-device-width" ,initial-scale= 1.0">
+<style>
+body{
         margin: 0px;
-        padding: 0px;
+        padding-left: 10%;
+        padding-right:  10%;
         background-color: white;
     }
     header{
@@ -57,6 +58,7 @@
 	    background:white;
     }
     table {
+        text-align: center;
         font-family: arial, sans-serif;
         border-collapse: collapse;
         width: 85%;
@@ -70,92 +72,125 @@
     tr:nth-child(even) {
         background-color: paleturquoise;
     }
-    </style>
-    </head>
-    <body>
+    .column {
+    float: left;
+    width: 30%;
+    padding: 15px;
+    }
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    @media screen and (max-width:600px) {
+    .column {
+    width: 100%;
+        }
+    }
+</style>
+<body>
         <header>
-            <h2>NitipHelm</h2>
-            <h5>#gaktakutilang</h5>
-        </header>
-        <nav class="menu">
-                <ul>
-                    <li>
-                        <a href="index.html">HOME</a>
-                    </li>
-                    <li>
-                        <a href="Produk.html">PRODUK/SERVICE</a>
-                    </li>
-                    <li>
-                        <a href="Contact.html">CONTACT US</a>
-                    </li>
-                </ul>
-            </nav>
-            <section>
-                <img src="helm1.jpg" width="100%">
-            </section>
-            <section style="text-align: center; font-size: large;">
-                <h1>TENTANG NitipHelm!</h1>
-                <h3>NitipHelm adalah sebuah jasa yang bergerak dibidang penitipan untuk mengurangi rasa kecemasan orang yang sering meninggalkan helm nya diparkiran</h3>
-                <p>Pokoknya HARUS BANGET Nitip Helm dikita! ok!</p>
-            </section>
-            <section>
-                        <h1>Helm yang bisa dititipkan</h1>
-                    <table>
-                        <tr>
-                          <th>Jenis helm</th>
-                          <th>Harga Penitipan</th>
-                        </tr>
-                        <tr>
-                          <td>Helm Full Face
-                                <table>
-                                    <td style="border: 0px;"> 
-                                        <img src="Full-Face.jpg" width="10%"> 
-                                    </td>
-                                </table>
-                          </td>
-                          <td>Rp.7.000/60 Menit</td>
-                        </tr>
-                        <tr>
-                          <td>Helm Bogo
-                                <table>
-                                    <td style="border: 0px;"> 
-                                        <img src="Helm_Bogo_.jpg" width="10%"> 
-                                    </td>
-                                </table>
-                          </td>
-                          <td>Rp.5.000/60 Menit</td>
-                        </tr>
-                        <tr>
-                          <td>Helm Anak-Anak
-                                <table>
-                                    <td style="border: 0px;"> 
-                                        <img src="helm-anak_full13.jpg" width="10%"> 
-                                    </td>
-                                </table>
-                          </td>
-                          <td>Rp.3.000/ 60 Menit</td>
-                        </tr>
-                        <tr>
-                          <td>Helm Biasa
-                                <table>
-                                    <td style="border: 0px;"> 
-                                            <img src="helm sponsor.jpg" width="10%"> 
-                                    </td>
-                                </table>
-                          </td>
-                          <td>Rp.3.000/ 60 Menit</td>
-                        </tr>
-                        <tr>
-                            <td>Member (Semua Helm)</td>
-                            <td>Rp.200.000/ 30 hari</td>
-                            </tr>
-                      </table>
-                </section>
-                <br>
-                <footer>
-                        NitipHelm.com</br>
-                        contact me by email : NitipHelmjakarta@gmail.com</br>
-                        Powered by Husnulchotimah.
-                </footer>
-    </body>
+                <h2>NitipHelm</h2>
+                <h5>#gaktakutilang</h5>
+            </header>
+            <nav class="menu">
+                    <ul>
+                        <li>
+                            <a href="index.html">HOME</a>
+                        </li>
+                        <li>
+                            <a href="Produk.html">PRODUK/SERVICE</a>
+                        </li>
+                        <li>
+                            <a href="Contact.html">CONTACT US</a>
+                        </li>
+                    </ul>
+                </nav>
+                <section>
+                        <img src="helm1.jpg" width="100%">
+                    </section>
+                    <section style="text-align: center; font-size: large;">
+                        <h1>TENTANG NitipHelm!</h1>
+                        <h3>NitipHelm adalah sebuah jasa yang bergerak dibidang penitipan untuk mengurangi rasa kecemasan orang yang sering meninggalkan helm nya diparkiran</h3>
+                        <p>Pokoknya HARUS BANGET Nitip Helm dikita! ok!</p>
+                    </section>
+    <section style="text-align: center;">
+    <div class="row">
+        <div class="column">
+          <h2> Helm Bogo</h2>
+          <img src="Helm_Bogo_.jpg" width="73%">
+          <p>Helm nyaman yang baik digunakan saat berkendara untuk keamanan</p>
+        </div>
+        
+        <div class="column">
+          <h2>Helm Fulface</h2>
+          <img src="Full-Face.jpg" width="50%">
+          <p>Helm nyaman yang baik digunakan saat berkendara untuk keamanan</p>
+        </div>
+        
+        <div class="column">
+          <h2>Helm Anak-Anak</h2>
+          <img src="helm-anak_full13.jpg" width="53%">
+          <p>Helm nyaman yang baik digunakan saat berkendara untuk keamanan</p>
+        </section>
+        <section  style="text-align: center;">
+                <h1>Helm yang bisa dititipkan </h1>
+            <table>
+                <tr>
+                  <th>Jenis helm</th>
+                  <th>Harga Penitipan</th>
+                </tr>
+                <tr>
+                  <td>Helm Full Face
+                        <table>
+                            <td style="border: 0px;"> 
+                                <img src="Full-Face.jpg" width="10%"> 
+                            </td>
+                        </table>
+                  </td>
+                  <td>Rp.7.000/60 Menit</td>
+                </tr>
+                <tr>
+                  <td>Helm Bogo
+                        <table>
+                            <td style="border: 0px;"> 
+                                <img src="Helm_Bogo_.jpg" width="10%"> 
+                            </td>
+                        </table>
+                  </td>
+                  <td>Rp.5.000/60 Menit</td>
+                </tr>
+                <tr>
+                  <td>Helm Anak-Anak
+                        <table>
+                            <td style="border: 0px;"> 
+                                <img src="helm-anak_full13.jpg" width="10%"> 
+                            </td>
+                        </table>
+                  </td>
+                  <td>Rp.3.000/ 60 Menit</td>
+                </tr>
+                <tr>
+                  <td>Helm Biasa
+                        <table>
+                            <td style="border: 0px;"> 
+                                    <img src="helm sponsor.jpg" width="10%"> 
+                            </td>
+                        </table>
+                  </td>
+                  <td>Rp.3.000/ 60 Menit</td>
+                </tr>
+                <tr>
+                    <td>Member (Semua Helm)</td>
+                    <td>Rp.200.000/ 30 hari</td>
+                    </tr>
+              </table>
+        </section>
+        <br>
+        <footer>
+                NitipHelm.com</br>
+                contact me by email : NitipHelmjakarta@gmail.com</br>
+                Powered by Husnulchotimah.
+        </footer>
+</body>
 </html>
